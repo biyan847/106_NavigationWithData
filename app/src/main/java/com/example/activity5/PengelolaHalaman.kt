@@ -94,7 +94,7 @@ fun EsJumboApp(
                 HalamanSatu(
                     pilihanRasa = flavors.map { id -> context.resources.getString(id) },
                     onSelectionChanged = { viewModel.setRasa(it)},
-                    onConfirmButtonClicked = {viewModel.setjumlah(it)},
+                    onConfirmButtonClicked = {viewModel.setJumlah(it)},
                     onNextButtonClicked = { navController.navigate(PengelolaHalaman.Summary.name)
                     },
                     onCancelButtonClicked = { cancelOrderAndNavigateToHome(
