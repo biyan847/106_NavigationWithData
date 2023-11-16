@@ -18,12 +18,12 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import com.example.activity5.R
-import com.example.activity5.data.OrderUiState
+import com.example.activity5.data.OrderUistate
 import com.example.activity5.ui.komponen.FormatLabelHarga
 
 @Composable
 fun HalamanDua(
-    orderUIState: OrderUiState,
+    orderUIState: OrderUistate,
     onCancelButtonClicked: () -> Unit,
     //onSendButtonClicked: (String, String) -> Unit,
     modifier: Modifier = Modifier

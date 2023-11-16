@@ -1,6 +1,5 @@
 package com.example.activity5
 
-import EsJumboApp
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
