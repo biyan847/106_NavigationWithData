@@ -1,8 +1,7 @@
 package com.example.activity5
 
 import androidx.lifecycle.ViewModel
-import com.example.activity5.data.OrderUiState
-
+import com.example.activity5.data.OrderUistate
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -12,8 +11,8 @@ import java.text.NumberFormat
 
 private const val HARGA_PER_CUP = 3000
 class orderviewmodel : ViewModel (){
-    private val _stateUI = MutableStateFlow(OrderUiState())
-    val stateUI: StateFlow<OrderUiState> = _stateUI.asStateFlow()
+    private val _stateUI = MutableStateFlow(OrderUistate())
+    val stateUI: StateFlow<OrderUistate> = _stateUI.asStateFlow()
 
     fun setJumlah(jmlEsJumbo: Int) {
         _stateUI.update { stateSaatIni ->
@@ -30,7 +29,7 @@ class orderviewmodel : ViewModel (){
     }
 
     fun resetOrder() {
-        _stateUI.value = OrderUiState()
+        _stateUI.value = OrderUistate()
     }
 
     private fun hitungHarga(jumlah: Int = _stateUI.value.jumlah): String {
